@@ -1,0 +1,44 @@
+.helloWorld p {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Reenie Beanie", cursive !important;
+}
+
+#about,
+#projects,
+#contact p {
+  text-align: justify;
+}
+
+section {
+  &:first-child {
+    scroll-margin-top: 60px;
+    scroll-padding-top: 60px;
+  }
+  &:not(:first-child) {
+    scroll-margin-top: 60px;
+    scroll-padding-top: 60px;
+  }
+}
+
+.accordion {
+  --bs-accordion-btn-color: #000000;
+  --bs-accordion-btn-bg: rgba(28, 28, 28, 0.2);
+  --bs-accordion-active-color: #fff;
+  --bs-accordion-active-bg: rgba(41, 41, 41, 0.5);
+  --bs-accordion-bg: transparent;
+}
+.img-container {
+  max-width: 100%;
+}
+
+.img-container img {
+  border-radius: 20px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .flex-row .img-container img {
+    width: 100%;
+  }
+}
